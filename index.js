@@ -10,7 +10,7 @@ const app = Vue.createApp({
     },
     methods: {
         async fetchGames() {
-            let data = await fetch('http://localhost:3000/games', {
+            let data = await fetch('https://leaderboards-ktwk.onrender.com/games', {
                 method: 'GET'
             });
             data = await data.json();
